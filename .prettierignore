@@ -1,0 +1,10 @@
+node_modules/
+dist/
+docs/
+lib/
+.vscode/
+package.json
+package-lock.json
+**/*.html
+**/*.css
+**/*.md

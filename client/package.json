@@ -1,0 +1,55 @@
+{
+    "name": "zally-mcp-server-sdk",
+    "version": "1.0.0",
+    "description": "TypeScript client SDK for the API Linter MCP server",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "test": "jest src --coverage --colors --detectOpenHandles --silent",
+        "lint": "eslint src --ext .ts",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "prepare": "npm run build",
+        "example": "ts-node examples/example.ts"
+    },
+    "keywords": [
+        "api",
+        "linter",
+        "openapi",
+        "swagger",
+        "mcp",
+        "client",
+        "sdk"
+    ],
+    "author": "Jose Bovet Derpich jose.bovet@gmail.com",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:jbovet/zally-mcp-server.git"
+    },
+    "dependencies": {},
+    "peerDependencies": {
+        "@modelcontextprotocol/sdk": "1.10.2"
+    },
+    "devDependencies": {
+        "@modelcontextprotocol/sdk": "1.10.2",
+        "@types/jest": "29.5.14",
+        "@types/node": "22.15.3",
+        "@typescript-eslint/eslint-plugin": "8.31.1",
+        "@typescript-eslint/parser": "8.31.1",
+        "eslint": "9.25.1",
+        "jest": "29.7.0",
+        "prettier": "3.5.3",
+        "ts-jest": "29.3.2",
+        "ts-node": "10.9.2",
+        "typescript": "5.8.3"
+    },
+    "engines": {
+        "node": ">=16.0.0"
+    }
+}
