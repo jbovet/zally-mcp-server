@@ -88,7 +88,7 @@ describe('McpService', () => {
         })
 
         it('should register tools during initialization', () => {
-            expect(mockMcpServer.tool).toHaveBeenCalledTimes(6)
+            expect(mockMcpServer.tool).toHaveBeenCalledTimes(4)
 
             // Verify tool registration is logged
             expect(mockLogger.info).toHaveBeenCalledWith(
