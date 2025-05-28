@@ -169,10 +169,6 @@ The MCP server provides the following pre-configured prompts:
 - All API inputs are validated before processing
 - **Retry Logic and Circuit Breaker**: Enhance resilience and security by handling service failures gracefully
 
-## WCNP Deployment
-
-The project includes a kitt.yml file for deployment in WCNP. Update the configuration as needed and deploy using your CI/CD pipeline.
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
