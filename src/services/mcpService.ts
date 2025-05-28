@@ -371,7 +371,7 @@ export class McpService {
                             {
                                 type: 'text',
                                 text:
-                                    `# API Quality Score based on DevOps Maturity Score: ${qualityScore}/10 (${qualityRating})\n\n` +
+                                    `# API Quality Score based on Maturity Score: ${qualityScore}/10 (${qualityRating})\n\n` +
                                     `## Violation Breakdown:\n` +
                                     `- MUST violations: ${violationCounts.must}\n` +
                                     `- SHOULD violations: ${violationCounts.should}\n` +
