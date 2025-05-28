@@ -52,7 +52,6 @@ Project Structure:
   - ```services/```: Business logic for API Linter and MCP integration.
   - ```utils/```: Utility classes, including HTTP clients and error handling.
   - ```target/```: Compiled JavaScript files.
-- ```kitt.yml```: Deployment configuration for Kubernetes.
 - ```package.json```: Project metadata and dependencies.
 - ```tsconfig.json```: TypeScript configuration file.
 - ```curl-mcp-client.sh```: Bash script to test MCP server endpoints via curl.
