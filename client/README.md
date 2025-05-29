@@ -26,7 +26,7 @@ npm install @modelcontextprotocol/sdk
 import { ApiLinterMcpClient } from 'api-linter-mcp-client'
 
 // Create a client instance
-const client = new ApiLinterMcpClient('http://localhost:8080/mcp', {
+const client = new ApiLinterMcpClient('http://localhost:3000/mcp', {
     debug: true,
     timeout: 30000, // 30 seconds timeout
 })
@@ -134,7 +134,7 @@ This will connect to a local API Linter MCP server (if available) and demonstrat
 
 ```typescript
 constructor(
-  serverUrl: string = 'http://localhost:8080/mcp',
+  serverUrl: string = 'http://localhost:3000/mcp',
   options?: {
     clientName?: string;
     clientVersion?: string;

@@ -73,8 +73,8 @@ npm run build
 
 Environment variables:
 
-- `PORT`: Server port (default: 8080)
-- `APILINTER_URL`: API Linter service URL (default: <http://localhost:8080>)
+- `PORT`: Server port (default: 3000)
+- `APILINTER_URL`: API Linter service URL (default: <http://localhost:3000>)
 - `RETRY_COUNT`: Number of retry attempts for failed requests (default: 3)
 - `CIRCUIT_BREAKER_THRESHOLD`: Failure threshold to trigger the circuit breaker (default: 5)
 
@@ -88,7 +88,7 @@ Start the server with:
 npm run dev
 ```
 
-The MCP Server will run in Streamable HTTP mode on endpoint: <http://localhost:8080/mcp>
+The MCP Server will run in Streamable HTTP mode on endpoint: <http://localhost:3000/mcp>
 
 ## Testing the Server
 

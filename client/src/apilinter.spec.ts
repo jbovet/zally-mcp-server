@@ -59,7 +59,7 @@ describe('ApiLinterMcpClient', () => {
             // Verify transport initialization with default URL
             expect(StreamableHTTPClientTransport).toHaveBeenCalledWith(
                 expect.objectContaining({
-                    href: expect.stringContaining('localhost:8080/mcp'),
+                    href: expect.stringContaining('localhost:3000/mcp'),
                 }),
                 expect.any(Object)
             )

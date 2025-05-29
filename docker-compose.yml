@@ -1,0 +1,49 @@
+services:
+    postgres:
+        image: postgres:13
+        environment:
+            - POSTGRES_PASSWORD=postgres
+            - POSTGRES_DB=zally
+        ports:
+            - '5432:5432'
+        volumes:
+            - postgres-data:/var/lib/postgresql/data
+        healthcheck:
+            test: ['CMD-SHELL', 'pg_isready -U postgres']
+            interval: 10s
+            timeout: 5s
+            retries: 5
+            start_period: 10s
+    zally-server:
+        image: ghcr.io/schweizerischebundesbahnen/zally/zally-server:latest
+        depends_on:
+            postgres:
+                condition: service_healthy
+        environment:
+            - SPRING_PROFILES_ACTIVE=dev
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/zally
+            - SPRING_DATASOURCE_USERNAME=postgres
+            - SPRING_DATASOURCE_PASSWORD=postgres
+        ports:
+            - '8000:8000'
+        # healthcheck:
+        #     test: ['CMD', 'curl', '-f', 'http://localhost:8000/']
+        #     timeout: 3s
+        #     retries: 3
+        #     start_period: 10s
+    mcp-server:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        environment:
+            - PORT=3000
+            - APILINTER_URL=http://zally-server:8000
+            - RETRY_COUNT=3
+            - CIRCUIT_BREAKER_THRESHOLD=5
+        ports:
+            - '3000:3000'
+        depends_on:
+            - zally-server
+
+volumes:
+    postgres-data:

@@ -256,7 +256,7 @@ describe('StreamableHttpController', () => {
             const postHandler = (mockApp.post as jest.Mock).mock.calls[0][1]
 
             // Create request with valid origin
-            const req = mockRequest('POST', { origin: 'http://localhost:8080' })
+            const req = mockRequest('POST', { origin: 'http://localhost:3000' })
             const res = mockResponse()
 
             await postHandler(req, res)
@@ -265,7 +265,7 @@ describe('StreamableHttpController', () => {
             expect(mockLogger.debug).toHaveBeenCalledWith(
                 'Origin validation passed',
                 expect.objectContaining({
-                    origin: 'http://localhost:8080',
+                    origin: 'http://localhost:3000',
                 })
             )
 

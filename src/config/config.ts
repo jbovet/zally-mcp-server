@@ -34,7 +34,7 @@ export const config: Config = {
     environment:
         (process.env.NODE_ENV as 'development' | 'test' | 'production') ||
         'development',
-    port: parseInt(process.env.PORT || '8080', 10),
+    port: parseInt(process.env.PORT || '3000', 10),
     url:
         process.env.APILINTER_URL ||
         'http://localhost:8080',
@@ -74,5 +74,5 @@ export const config: Config = {
     },
     allowedOrigins: process.env.ALLOWED_ORIGINS
         ? process.env.ALLOWED_ORIGINS.split(',')
-        : ['http://localhost:8080', 'http://127.0.0.1:8080'],
+        : ['http://localhost:3000', 'http://127.0.0.1:3000'],
 }
