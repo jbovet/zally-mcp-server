@@ -13,7 +13,7 @@ import path from 'path'
  */
 async function main() {
     // Create an API Linter client with debug mode enabled
-    const client = new ApiLinterMcpClient('http://localhost:8080/mcp', {
+    const client = new ApiLinterMcpClient('http://localhost:3000/mcp', {
         debug: true,
         timeout: 30000, // 30 seconds timeout
         clientName: 'example-client',

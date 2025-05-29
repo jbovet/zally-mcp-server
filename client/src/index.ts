@@ -18,7 +18,7 @@ import {
  *
  * @example
  * ```typescript
- * const client = new ApiLinterMcpClient('http://localhost:8080/mcp');
+ * const client = new ApiLinterMcpClient('http://localhost:3000/mcp');
  * await client.connect();
  *
  * // Validate an API specification
@@ -41,11 +41,11 @@ export class ApiLinterMcpClient {
 
     /**
      * Creates a new API Linter MCP client
-     * @param serverUrl URL to the API Linter MCP endpoint - defaults to http://localhost:8080/mcp
+     * @param serverUrl URL to the API Linter MCP endpoint - defaults to http://localhost:3000/mcp
      * @param options Additional client options
      */
     constructor(
-        private serverUrl: string = 'http://localhost:8080/mcp',
+        private serverUrl: string = 'http://localhost:3000/mcp',
         private options: {
             clientName?: string
             clientVersion?: string

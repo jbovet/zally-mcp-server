@@ -206,8 +206,8 @@ export class StreamableHttpController {
         // Check against allowed origins - this is a simple check, you might want to enhance
         // with a more robust validation for your specific requirements
         const allowedOrigins = [
-            'http://localhost:8080',
-            'http://127.0.0.1:8080',
+            'http://localhost:3000',
+            'http://127.0.0.1:3000',
             // Add any other trusted origins here
         ]
 
