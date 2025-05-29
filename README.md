@@ -2,6 +2,8 @@
 
 The OpenAPI MCP Server powers seamless communication between LLM and REST APIs by implementing the Model Context Protocol (MCP).
 
+![v2](https://github.com/user-attachments/assets/9279d9c4-cb42-4cdb-85a9-71a56758b820)
+
 ## Features
 
 | Capability | Implemented | Notes |
@@ -138,14 +140,6 @@ The MCP server provides the following tools for API Linting:
 - `get_rule_categories`: Retrieves the categories of API Linter rules
   - Parameters: None
   - Returns: List of rule categories
-
-- `get_api_docs`: Retrieves the API documentation
-  - Parameters: None
-  - Returns: API documentation content
-
-- `get_api_linter_link`: Retrieves the link to the API Linter service
-  - Parameters: None
-  - Returns: API Linter service link
 
 ## Prompts
 
