@@ -34,10 +34,10 @@
     },
     "dependencies": {},
     "peerDependencies": {
-        "@modelcontextprotocol/sdk": "1.12.1"
+        "@modelcontextprotocol/sdk": "1.15.0"
     },
     "devDependencies": {
-        "@modelcontextprotocol/sdk": "1.12.1",
+        "@modelcontextprotocol/sdk": "1.15.0",
         "@types/jest": "29.5.14",
         "@types/node": "22.15.26",
         "@typescript-eslint/eslint-plugin": "8.31.1",
