@@ -15,7 +15,7 @@
         "dev": "npm run build && node target/server.js"
     },
     "dependencies": {
-        "@modelcontextprotocol/inspector": "0.15.0",
+        "@modelcontextprotocol/inspector": "0.16.2",
         "@modelcontextprotocol/sdk": "1.15.0",
         "axios": "1.10.0",
         "cors": "2.8.5",
