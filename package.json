@@ -17,7 +17,7 @@
     "dependencies": {
         "@modelcontextprotocol/inspector": "0.16.5",
         "@modelcontextprotocol/sdk": "1.17.3",
-        "axios": "1.11.0",
+        "axios": "1.20.0",
         "cors": "2.8.5",
         "express": "5.1.0",
         "prom-client": "15.1.3",
