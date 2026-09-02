@@ -16,7 +16,7 @@
     },
     "dependencies": {
         "@modelcontextprotocol/inspector": "0.16.5",
-        "@modelcontextprotocol/sdk": "1.17.3",
+        "@modelcontextprotocol/sdk": "1.30.0",
         "axios": "1.11.0",
         "cors": "2.8.5",
         "express": "5.1.0",
